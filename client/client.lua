@@ -117,14 +117,14 @@ function missionstart()
 						x = x - 1
 						count[k] = nil
 						if x == 0 then
-							TriggerEvent("vorp:RipRight", Config.ObjectivesKilledMessage, 4000)
+							TriggerEvent("vorp:TipRight", Config.ObjectivesKilledMessage, 4000)
 							TriggerServerEvent('vorp_bountyhunting:AddSomeMoney')
 							stopmission()
 						end
 					end
 				end
 				if IsPlayerDead(pl) then
-					TriggerEvent("vorp:RipRight", Config.DeadMessage, 4000)
+					TriggerEvent("vorp:TipRight", Config.DeadMessage, 4000)
 					stopmission()
 				end
 			end
